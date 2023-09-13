@@ -128,7 +128,7 @@ section {
 }
 
 /*Penetapan nilai pada button "My Works" yang terdapat di halaman home*/
-.btn{
+.hero-text .btn{
     display: inline-block;
     padding: 16px 45px;
     margin-left: -50px;
@@ -141,8 +141,8 @@ section {
     transition: all ease .50s;
 }
 
-/*Penetapan nilai animasi/tranformasi pada bagian button "My Works" yang berada di halaman homer*/
-.btn:hover{
+/*Penetapan nilai animasi/tranformasi pada bagian button "My Works" yang berada di halaman home*/
+.hero-text .btn:hover{
     transform: translateX(5px);
     background: transparent;
     border: 2px solid var(--main-color);
@@ -194,6 +194,26 @@ header.sticky{
 /*Penetapan nilai pada text yang disorot pada halaman about*/
 span{
     color: var(--main-color);
+}
+
+/*Penetapan nilai pada button "See More" yang terdapat di halaman about*/
+.about-text .btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    transition: all ease .50s;
+}
+
+/*Penetapan nilai animasi/tranformasi pada bagian button "See More" yang berada di halaman about*/
+.about-text .btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
 }
 
 /*Penetapan nilai pada halaman skill*/
