@@ -1,0 +1,505 @@
+/*Menetapkan nilai pada semua elemen pada halaman*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+/*menyimpan nilai yang sering digunakan di seluruh stylesheet tanpa harus menuliskan ulang nilai tersebut secara berulang-ulang. */
+:root{
+    --bg-color: #191919;
+    --secont-bg-color: #101010;
+    --main-color: #803da6;
+    --text-color:#fff;
+    --second-color: #e4e4e4;
+    --other-color: #c6c9d8bf;
+
+    --h1-font: 7rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+
+/*Menetapkan nilai pada semua elemen pada bagian body*/
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/*Penetapan nilai pada bagian header atau navbar*/
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 11%;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+
+/*Penetapan nilai ukuran pada bagian logo yang berada di header atau navbar*/
+.logo img{
+    width: 40%;
+    height: auto;
+}
+
+/*Penetapan nilai pada bagian logo yang berada di header atau navbar*/
+.navlist{
+    display: flex;
+}
+
+/*Penetapan nilai pada bagian tulisan yang berada di header atau navbar*/
+.navlist a{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease .40s;
+}
+
+/*Penetapan nilai animasi/tranformasi pada bagian tulisan yang berada di header atau navbar*/
+.navlist a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 42px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/*Penetapan nilai pada seluruh bagian section*/
+section {
+    padding: 120px 19% 100px;
+}
+
+/*Penetapan nilai pada halaman home*/
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*Penetapan nilai pada text yang terdapat pada halaman home*/
+.hero-text h3{
+    color: var(--second-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: -50px;
+    word-spacing: 10px;
+}
+
+.hero-text h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h1-font);   
+    color: var(--text-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-left: -50px;
+    letter-spacing: 2px;
+}
+
+.hero-text h4{
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-left: -50px;
+    margin-bottom: 3.5rem;
+}
+
+/*Penetapan nilai pada button "My Works" yang terdapat di halaman home*/
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    margin-left: -50px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    transition: all ease .50s;
+}
+
+/*Penetapan nilai animasi/tranformasi pada bagian button "My Works" yang berada di halaman homer*/
+.btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+
+/*Penetapan nilai pada bagian navbar agar menempel di bagian atas*/
+header.sticky{
+    padding: 15px 11%;
+    background: #000;
+    border-bottom: 1px solid #4e5055;
+}
+
+/*Penetapan nilai pada halaman about*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 4rem;
+}
+
+/*Penetapan nilai pada gambar/foto yang ada pada halaman about*/
+.about-img img{
+    width: 130%;
+    height: auto;
+    margin-left: -100px;
+}
+
+/*Penetapan nilai pada text yang ada pada halaman about*/
+.about-text h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.about-text h5{
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.about-text p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+/*Penetapan nilai pada text yang disorot pada halaman about*/
+span{
+    color: var(--main-color);
+}
+
+/*Penetapan nilai pada halaman skill*/
+.skill{
+    background: var(--secont-bg-color);
+}
+
+/*Penetapan nilai pada text halaman skill*/
+.text-center{
+    text-align: center;
+}
+
+.text-center h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.text-center h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/*Penetapan nilai pada item/elemeny yang derada di halaman skill*/
+.skill-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/*Penetapan nilai pada box/kotak yang berada di halaman skill*/
+.skill-box{
+    padding: 45px 30px;
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all ease .50s;
+}
+
+/*Penetapan nilai pada text yang berada di halaman skill*/
+.skill i{
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.skill h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.skill p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+/*Penetapan nilai pada animasi/transformasi button di halaman skill*/
+.skill-box:hover{
+    transform: translateY(-8px);
+    border: 1px solid var(--main-color);
+}
+
+/*Penetapan nilai pada judul halaman portfolio*/
+.center-text2{
+    text-align: center;
+}
+
+.center-text2 h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.center-text2 h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/*Penetapan nilai pada item/element di halaman portfolio*/
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+}
+
+/*Penetapan nilai pada gambar/foto disetiap row gambar pada halaman portfolio*/
+.row img{
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+}
+
+/*Penetapan nilai pada row/kotak untuk gambar di halaman portfolio*/
+.row{
+    background: var(--secont-bg-color);
+    border-radius: 28px;
+    border: 1px solid transparent;
+    padding: 20px;
+    transition: all .50s ease;
+}
+
+/*Penetapan nilai pada row/kotak untuk deskripsi di halaman portfolio*/
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+/*Penetapan nilai pada text setiap row di halaman portfolio*/
+.row h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--other-color);
+}
+
+.row i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+    border-radius: 50%;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+.row h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/*Penetapan nilai animasi/tranformasi pada bagian row/kotak di halaman portfolio*/
+.row:hover{
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
+}
+
+/*Penetapan nilai pada halaman blog*/
+.blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+    background: var(--secont-bg-color);
+}
+
+/*Penetapan nilai pada gambar/foto di halaman blog*/
+.blog-img img{
+    width: 150%;
+    margin-bottom: 40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Penetapan nilai pada text di halaman blog*/
+.blog-text h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    margin-left: -50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.blog-text h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: -50px;
+}
+
+.blog p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-left: -50px;
+}
+
+/*Penetapan nilai pada form di halaman contact*/
+.contact{
+    align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+}
+
+.contact-form form{
+    position: relative;
+    width: 600px;
+}
+
+/*Penetapan nilai pada item/element form di halaman contact*/
+form input,
+form textarea{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px var(--main-color);
+    background: var(--secont-bg-color);
+    color: var(--text-color);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: var(--other-color);
+    font-size: 15px;
+}
+
+/*Penetapan nilai pada button kirim di halaman contact*/
+form .send-btn{
+    display: inline-block;
+    padding: 11px 26px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    transition: all ease .50s;
+    width: 30%;
+}
+
+/*Penetapan nilai animasi/tranformasi pada bagian buttom di halaman contact*/
+form .send-btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+
+/*Penetapan nilai pada icon social media di halaman contact*/
+.social-media{
+    align-items: center;
+    text-align: center;
+
+}
+
+.contact .social-media i{
+    height: 60px;
+    width: 60px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 0 9px;
+    margin-top: 30px;
+    transition: all ease .50s;
+}
+
+.contact .social-media i:hover{
+    transform: translateY(-5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+
+/*Penetapan nilai pada bagian footer*/
+.footer{
+    padding: 22px 16%;
+    background: var(--secont-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/*Penetapan nilai pada isi/copyright di bagian footer*/
+.copyright p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--other-color);
+}
+
+/*Penetapan nilai pada button scroll-top di bagian footer*/
+.scroll-top i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 27px;
+}
